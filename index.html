@@ -3,21 +3,29 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sanitary Pest Control – Clean Space | Safe Place</title>
-    <meta name="description" content="Sanitary Pest Control – Professional pest control services in Pune since 2011. Cockroach, Rat, Termite, Mosquito, Snake control & more. Government licensed.">
+    <title>Sanitary Pest Control – Pune's Trusted Pest Control Since 2011</title>
+    <meta name="description" content="Sanitary Pest Control – Govt. Licensed pest control in Pune since 2011. Cockroach, Rat, Termite, Mosquito, Snake control & more. 100% Safe & Effective.">
     <link rel="stylesheet" href="css/style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Playfair+Display:wght@700;800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=Playfair+Display:wght@700;800;900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 </head>
 <body>
-    <!-- ===================== HEADER / NAV ===================== -->
+
+    <!-- ============ TOP BAR ============ -->
+    <div class="topbar">
+        <div class="container topbar__inner">
+            <span><i class="fas fa-shield-halved"></i> Govt. Licence: LAID10020753</span>
+            <span><i class="fas fa-check-circle"></i> 100% Safe & Odourless Service</span>
+            <a href="tel:+917709395838"><i class="fas fa-phone"></i> 7709395838</a>
+        </div>
+    </div>
+
+    <!-- ============ HEADER ============ -->
     <header class="header" id="header">
         <div class="container header__inner">
             <a href="#" class="logo">
-                <div class="logo__icon">
-                    <i class="fas fa-shield-halved"></i>
-                </div>
+                <img src="images/logo.png" alt="Sanitary Pest Control" class="logo__img" id="logoImg">
                 <div class="logo__text">
                     <span class="logo__title">SANITARY</span>
                     <span class="logo__subtitle">PEST CONTROL</span>
@@ -33,8 +41,9 @@
                     <li><a href="#contact" class="nav__link">Contact</a></li>
                 </ul>
             </nav>
-            <a href="tel:+917709395838" class="header__phone">
-                <i class="fas fa-phone"></i> 7709395838
+            <a href="tel:+917709395838" class="header__cta">
+                <i class="fas fa-phone-alt"></i>
+                <span>Call Now</span>
             </a>
             <button class="hamburger" id="hamburger" aria-label="Menu">
                 <span></span><span></span><span></span>
@@ -42,277 +51,387 @@
         </div>
     </header>
 
-    <!-- ===================== HERO ===================== -->
+    <!-- ============ HERO ============ -->
     <section class="hero" id="home">
-        <div class="hero__overlay"></div>
+        <div class="hero__bg"></div>
         <div class="container hero__inner">
-            <div class="hero__badge">Since 2011 • Govt. Licensed</div>
-            <h1 class="hero__title">Clean Space.<br><span>Safe Place.</span></h1>
-            <p class="hero__subtitle">Professional pest control services in Pune. We use safe, odourless chemicals to protect your home and business.</p>
-            <div class="hero__actions">
-                <a href="tel:+917709395838" class="btn btn--primary">
-                    <i class="fas fa-phone"></i> Call Now: 7709395838
-                </a>
-                <a href="#contact" class="btn btn--outline">Get a Free Quote</a>
+            <div class="hero__badge">
+                <i class="fas fa-medal"></i> Since 2011 • Govt. Licensed
             </div>
-            <div class="hero__stats">
-                <div class="stat">
-                    <span class="stat__num">14+</span>
-                    <span class="stat__label">Years Experience</span>
+            <h1 class="hero__title">Pests <span>Don't Stand</span><br>A Chance With Us</h1>
+            <p class="hero__subtitle">Professional pest control services across Pune. Safe, odourless, and 100% effective treatments for homes and businesses.</p>
+            <div class="hero__actions">
+                <a href="https://wa.me/917709395838?text=Hi%20Sanitary%20Pest%20Control!%20I%20need%20pest%20control%20service." target="_blank" class="btn btn--whatsapp">
+                    <i class="fab fa-whatsapp"></i> WhatsApp Us
+                </a>
+                <a href="tel:+917709395838" class="btn btn--call">
+                    <i class="fas fa-phone"></i> 7709395838
+                </a>
+                <a href="#contact" class="btn btn--quote">
+                    <i class="fas fa-file-invoice"></i> Free Quote
+                </a>
+            </div>
+
+            <!-- Trust Banner -->
+            <div class="hero__trust">
+                <div class="trust-badge">
+                    <i class="fas fa-leaf"></i>
+                    <span>Safe Chemicals<br><small>Odourless Service</small></span>
                 </div>
-                <div class="stat">
-                    <span class="stat__num">5000+</span>
-                    <span class="stat__label">Happy Clients</span>
+                <div class="trust-badge">
+                    <i class="fas fa-user-tie"></i>
+                    <span>Experienced Team<br><small>On Time Service</small></span>
                 </div>
-                <div class="stat">
-                    <span class="stat__num">100%</span>
-                    <span class="stat__label">Safe & Effective</span>
+                <div class="trust-badge">
+                    <i class="fas fa-star"></i>
+                    <span>Satisfaction<br><small>Guaranteed</small></span>
                 </div>
+            </div>
+        </div>
+        <div class="hero__wave">
+            <svg viewBox="0 0 1440 120" preserveAspectRatio="none">
+                <path d="M0,60 C360,120 1080,0 1440,60 L1440,120 L0,120 Z" fill="#fff"/>
+            </svg>
+        </div>
+    </section>
+
+    <!-- ============ SAFETY BANNER ============ -->
+    <section class="safety-banner">
+        <div class="container">
+            <div class="safety-banner__inner">
+                <i class="fas fa-heartbeat"></i>
+                <span>WE CARE FOR YOUR HEALTH & HYGIENE</span>
+                <span class="safety-banner__sep">|</span>
+                <i class="fas fa-check-double"></i>
+                <span>100% SAFE & EFFECTIVE SERVICE</span>
             </div>
         </div>
     </section>
 
-    <!-- ===================== ABOUT ===================== -->
+    <!-- ============ ABOUT ============ -->
     <section class="section about" id="about">
         <div class="container">
-            <div class="section__header">
-                <span class="section__tag">About Us</span>
-                <h2 class="section__title">Pune's Trusted Pest Control Since <span>2011</span></h2>
-                <p class="section__desc">We are a Government licensed pest control company serving Pune and surrounding areas with professional, safe, and effective pest management solutions.</p>
-            </div>
             <div class="about__grid">
-                <div class="about__card">
-                    <div class="about__icon"><i class="fas fa-building"></i></div>
-                    <h3>Mahavir Shivale</h3>
-                    <p>Founder & Managing Director with over 14 years of hands-on experience in pest management and extermination services.</p>
+                <div class="about__content">
+                    <span class="section__tag">About Us</span>
+                    <h2 class="section__title">Pune's Most <span>Trusted</span> Pest Control Experts</h2>
+                    <p class="about__text">Founded in 2011 by <strong>Mahavir Shivale</strong>, Sanitary Pest Control has been protecting homes and businesses across Pune from unwanted pests for over 14 years.</p>
+                    <p class="about__text">We are a Government licensed company (Licence No: <strong>LAID10020753</strong>) committed to providing safe, effective, and environmentally responsible pest management solutions.</p>
+                    <div class="about__features">
+                        <div class="about__feature">
+                            <i class="fas fa-check-circle"></i> 14+ Years Experience
+                        </div>
+                        <div class="about__feature">
+                            <i class="fas fa-check-circle"></i> Govt. Licensed & Insured
+                        </div>
+                        <div class="about__feature">
+                            <i class="fas fa-check-circle"></i> 5000+ Happy Customers
+                        </div>
+                        <div class="about__feature">
+                            <i class="fas fa-check-circle"></i> Eco-Friendly Chemicals
+                        </div>
+                    </div>
                 </div>
-                <div class="about__card">
-                    <div class="about__icon"><i class="fas fa-file-shield"></i></div>
-                    <h3>Govt. Licensed</h3>
-                    <p>Licence No: <strong>LAID10020753</strong> — fully compliant with all government regulations for pest control operations.</p>
-                </div>
-                <div class="about__card">
-                    <div class="about__icon"><i class="fas fa-leaf"></i></div>
-                    <h3>Eco-Friendly</h3>
-                    <p>We use safe, odourless, eco-friendly chemicals that are 100% safe for your family, pets, and the environment.</p>
-                </div>
-                <div class="about__card">
-                    <div class="about__icon"><i class="fas fa-location-dot"></i></div>
-                    <h3>Service Area</h3>
-                    <p>Tulapur, Shivale Wasti, Tal: Haveli, Dist: Pune-412216 — serving all residential & commercial clients across Pune.</p>
+                <div class="about__stats">
+                    <div class="about__stats-grid">
+                        <div class="about__stat-card">
+                            <span class="about__stat-num">14+</span>
+                            <span class="about__stat-label">Years Experience</span>
+                        </div>
+                        <div class="about__stat-card">
+                            <span class="about__stat-num">5000+</span>
+                            <span class="about__stat-label">Happy Clients</span>
+                        </div>
+                        <div class="about__stat-card">
+                            <span class="about__stat-num">9</span>
+                            <span class="about__stat-label">Services Offered</span>
+                        </div>
+                        <div class="about__stat-card">
+                            <span class="about__stat-num">100%</span>
+                            <span class="about__stat-label">Safe & Effective</span>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- ===================== SERVICES ===================== -->
+    <!-- ============ SERVICES ============ -->
     <section class="section services" id="services">
         <div class="container">
             <div class="section__header">
-                <span class="section__tag">Our Services</span>
-                <h2 class="section__title">Complete Pest Control <span>Solutions</span></h2>
-                <p class="section__desc">From common household pests to specialized removal, we handle every job with professionalism and care.</p>
+                <span class="section__tag">What We Do</span>
+                <h2 class="section__title">Complete <span>Pest Control</span> Services</h2>
+                <p class="section__desc">From cockroaches to snakes, we handle every pest problem with professionalism and care.</p>
             </div>
             <div class="services__grid">
-                <div class="service-card" data-delay="0">
+                <div class="service-card">
                     <div class="service-card__icon">
                         <i class="fas fa-bug"></i>
+                        <span class="service-card__slash"></span>
                     </div>
-                    <h3 class="service-card__title">Cockroach Control</h3>
-                    <p class="service-card__desc">Complete elimination of cockroaches with safe gel treatment and spray solutions.</p>
+                    <h3>Cockroach Control</h3>
+                    <p>Complete elimination using safe gel treatment and spray solutions.</p>
                 </div>
-                <div class="service-card" data-delay="0.1">
+                <div class="service-card">
                     <div class="service-card__icon">
                         <i class="fas fa-rat"></i>
+                        <span class="service-card__slash"></span>
                     </div>
-                    <h3 class="service-card__title">Rat Control</h3>
-                    <p class="service-card__desc">Professional rodent management including baiting, trapping, and exclusion techniques.</p>
+                    <h3>Rat Control</h3>
+                    <p>Professional rodent management with baiting, trapping, and exclusion.</p>
                 </div>
-                <div class="service-card" data-delay="0.2">
+                <div class="service-card">
                     <div class="service-card__icon">
                         <i class="fas fa-home"></i>
+                        <span class="service-card__slash"></span>
                     </div>
-                    <h3 class="service-card__title">Termite Control</h3>
-                    <p class="service-card__desc">Advanced termite treatment to protect your property from structural damage.</p>
+                    <h3>Termite Control</h3>
+                    <p>Advanced treatment to protect your property from structural damage.</p>
                 </div>
-                <div class="service-card" data-delay="0.3">
+                <div class="service-card">
                     <div class="service-card__icon">
                         <i class="fas fa-mosquito"></i>
+                        <span class="service-card__slash"></span>
                     </div>
-                    <h3 class="service-card__title">Mosquito Control</h3>
-                    <p class="service-card__desc">Fogging and spray treatments to eliminate mosquitoes and reduce disease risk.</p>
+                    <h3>Mosquito Control</h3>
+                    <p>Fogging and spray treatments to eliminate mosquitoes and reduce disease risk.</p>
                 </div>
-                <div class="service-card" data-delay="0.4">
+                <div class="service-card">
                     <div class="service-card__icon">
                         <i class="fas fa-fly"></i>
+                        <span class="service-card__slash"></span>
                     </div>
-                    <h3 class="service-card__title">Fly Control</h3>
-                    <p class="service-card__desc">Effective fly management for homes, restaurants, and commercial kitchens.</p>
+                    <h3>Fly Control</h3>
+                    <p>Effective fly management for homes, restaurants, and commercial kitchens.</p>
                 </div>
-                <div class="service-card" data-delay="0.5">
+                <div class="service-card">
                     <div class="service-card__icon">
                         <i class="fas fa-pray"></i>
+                        <span class="service-card__slash"></span>
                     </div>
-                    <h3 class="service-card__title">Ant Control</h3>
-                    <p class="service-card__desc">Targeted ant elimination with long-lasting barrier protection.</p>
+                    <h3>Ant Control</h3>
+                    <p>Targeted ant elimination with long-lasting barrier protection.</p>
                 </div>
-                <div class="service-card" data-delay="0.6">
+                <div class="service-card">
                     <div class="service-card__icon">
                         <i class="fas fa-dragon"></i>
+                        <span class="service-card__slash"></span>
                     </div>
-                    <h3 class="service-card__title">Snake Control</h3>
-                    <p class="service-card__desc">Safe snake removal and relocation by trained professionals.</p>
+                    <h3>Snake Control</h3>
+                    <p>Safe snake removal and relocation by trained professionals.</p>
                 </div>
-                <div class="service-card" data-delay="0.7">
+                <div class="service-card">
                     <div class="service-card__icon">
                         <i class="fas fa-rotate"></i>
+                        <span class="service-card__slash"></span>
                     </div>
-                    <h3 class="service-card__title">Honeybee Relocation</h3>
-                    <p class="service-card__desc">Ethical honeybee removal and relocation without harming the colony.</p>
+                    <h3>Honeybee Relocation</h3>
+                    <p>Ethical removal and relocation without harming the colony.</p>
                 </div>
+                <div class="service-card">
+                    <div class="service-card__icon">
+                        <i class="fas fa-smog"></i>
+                        <span class="service-card__slash"></span>
+                    </div>
+                    <h3>Fogging Services</h3>
+                    <p>Large-area fogging for comprehensive pest elimination.</p>
+                </div>
+            </div>
+            <div class="services__cta">
+                <p>Not sure which service you need? <a href="#contact">Contact us</a> for a free inspection and recommendation.</p>
             </div>
         </div>
     </section>
 
-    <!-- ===================== WHY US ===================== -->
+    <!-- ============ WHY US ============ -->
     <section class="section why-us" id="why-us">
         <div class="container">
             <div class="section__header">
                 <span class="section__tag">Why Choose Us</span>
-                <h2 class="section__title">We Care For Your <span>Health & Hygiene</span></h2>
+                <h2 class="section__title">Your Health & Safety Is <span>Our Priority</span></h2>
+                <p class="section__desc">Here's why thousands of Pune residents trust Sanitary Pest Control.</p>
             </div>
             <div class="why-us__grid">
                 <div class="why-card">
-                    <div class="why-card__num">01</div>
-                    <div class="why-card__content">
-                        <h3>Safe Chemicals / Odourless Service</h3>
-                        <p>We use only approved, odourless chemicals that are safe for your family, children, and pets.</p>
+                    <div class="why-card__icon">
+                        <i class="fas fa-flask"></i>
                     </div>
+                    <h3>Safe Chemicals / Odourless Service</h3>
+                    <p>We use only approved, odourless chemicals that are safe for children, pets, and the environment.</p>
                 </div>
                 <div class="why-card">
-                    <div class="why-card__num">02</div>
-                    <div class="why-card__content">
-                        <h3>Experienced Team / On Time Service</h3>
-                        <p>Our trained technicians arrive on time, every time, with the right equipment and expertise.</p>
+                    <div class="why-card__icon">
+                        <i class="fas fa-clock"></i>
                     </div>
+                    <h3>Experienced Team / On Time Service</h3>
+                    <p>Our trained technicians arrive on time with the right equipment and expertise for every job.</p>
                 </div>
                 <div class="why-card">
-                    <div class="why-card__num">03</div>
-                    <div class="why-card__content">
-                        <h3>Satisfaction Guaranteed</h3>
-                        <p>We stand by our work. If the pests return, we return — no questions asked.</p>
+                    <div class="why-card__icon">
+                        <i class="fas fa-handshake"></i>
                     </div>
+                    <h3>Satisfaction Guaranteed</h3>
+                    <p>If pests return, we return — no questions asked. Your satisfaction is 100% guaranteed.</p>
                 </div>
                 <div class="why-card">
-                    <div class="why-card__num">04</div>
-                    <div class="why-card__content">
-                        <h3>100% Safe & Effective Service</h3>
-                        <p>Every treatment is carefully applied to maximize effectiveness while ensuring complete safety.</p>
+                    <div class="why-card__icon">
+                        <i class="fas fa-certificate"></i>
                     </div>
+                    <h3>100% Safe & Effective Service</h3>
+                    <p>Every treatment maximizes effectiveness while ensuring complete safety for your family.</p>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- ===================== GALLERY ===================== -->
+    <!-- ============ GALLERY ============ -->
     <section class="section gallery" id="gallery">
         <div class="container">
             <div class="section__header">
                 <span class="section__tag">Our Work</span>
                 <h2 class="section__title">See Our Team <span>In Action</span></h2>
-                <p class="section__desc">Real photos from our daily operations across Pune — professional service in action.</p>
+                <p class="section__desc">Real photos from our daily pest control operations across Pune.</p>
             </div>
             <div class="gallery__grid">
                 <div class="gallery__item">
-                    <img src="images/worker-1.jpg" alt="Pest control worker in warehouse" loading="lazy">
-                    <div class="gallery__caption">Industrial Warehouse Treatment</div>
-                </div>
-                <div class="gallery__item gallery__item--tall">
-                    <img src="images/worker-2.jpg" alt="Worker spraying pipes" loading="lazy">
-                    <div class="gallery__caption">Commercial Pipe Treatment</div>
+                    <img src="images/worker-1.jpg" alt="Industrial pest control treatment" loading="lazy">
+                    <div class="gallery__overlay">
+                        <span>Warehouse Treatment</span>
+                    </div>
                 </div>
                 <div class="gallery__item">
-                    <img src="images/worker-3.jpg" alt="Spraying industrial machinery" loading="lazy">
-                    <div class="gallery__caption">Machine Area Treatment</div>
+                    <img src="images/worker-2.jpg" alt="Commercial pest control" loading="lazy">
+                    <div class="gallery__overlay">
+                        <span>Pipe Line Treatment</span>
+                    </div>
+                </div>
+                <div class="gallery__item">
+                    <img src="images/worker-3.jpg" alt="Industrial machinery pest control" loading="lazy">
+                    <div class="gallery__overlay">
+                        <span>Machinery Area Treatment</span>
+                    </div>
                 </div>
                 <div class="gallery__item gallery__item--wide">
                     <img src="images/worker-4.jpg" alt="Residential pest control" loading="lazy">
-                    <div class="gallery__caption">Residential Living Room Service</div>
+                    <div class="gallery__overlay">
+                        <span>Residential Service</span>
+                    </div>
                 </div>
                 <div class="gallery__item">
-                    <img src="images/worker-5.jpg" alt="Worker in industrial space" loading="lazy">
-                    <div class="gallery__caption">Industrial Space Treatment</div>
+                    <img src="images/worker-5.jpg" alt="Industrial space pest control" loading="lazy">
+                    <div class="gallery__overlay">
+                        <span>Industrial Space Service</span>
+                    </div>
                 </div>
                 <div class="gallery__item">
-                    <img src="images/worker-6.jpg" alt="Office corridor treatment" loading="lazy">
-                    <div class="gallery__caption">Office & Corporate Service</div>
+                    <img src="images/worker-6.jpg" alt="Office pest control" loading="lazy">
+                    <div class="gallery__overlay">
+                        <span>Office Treatment</span>
+                    </div>
                 </div>
-                <div class="gallery__item gallery__item--wide">
-                    <img src="images/worker-7.jpg" alt="Treating furniture" loading="lazy">
-                    <div class="gallery__caption">Furniture & Upholstery Treatment</div>
+                <div class="gallery__item">
+                    <img src="images/worker-7.jpg" alt="Furniture pest control" loading="lazy">
+                    <div class="gallery__overlay">
+                        <span>Upholstery Treatment</span>
+                    </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- ===================== TESTIMONIAL / CTA BANNER ===================== -->
-    <section class="cta-banner">
-        <div class="container cta-banner__inner">
-            <div class="cta-banner__content">
-                <h2>Need Pest Control? <span>We're Here to Help.</span></h2>
-                <p>Call us today for a free inspection and quote. Serving Pune since 2011.</p>
+    <!-- ============ CTA BANNER ============ -->
+    <section class="cta-section">
+        <div class="container">
+            <div class="cta-section__inner">
+                <div class="cta-section__content">
+                    <h2>Pest Problem? <span>We're Just a Call Away.</span></h2>
+                    <p>Get a free inspection and quote today. Same-day service available in most areas.</p>
+                </div>
+                <div class="cta-section__buttons">
+                    <a href="https://wa.me/917709395838?text=Hi%20Sanitary%20Pest%20Control!%20I%20need%20immediate%20pest%20control%20service." target="_blank" class="btn btn--whatsapp btn--lg">
+                        <i class="fab fa-whatsapp"></i> WhatsApp Now
+                    </a>
+                    <a href="tel:+917709395838" class="btn btn--call btn--lg">
+                        <i class="fas fa-phone"></i> 7709395838
+                    </a>
+                </div>
             </div>
-            <a href="tel:+917709395838" class="btn btn--primary btn--lg">
-                <i class="fas fa-phone"></i> Call 7709395838
-            </a>
         </div>
     </section>
 
-    <!-- ===================== CONTACT ===================== -->
+    <!-- ============ CONTACT ============ -->
     <section class="section contact" id="contact">
         <div class="container">
             <div class="section__header">
-                <span class="section__tag">Contact Us</span>
-                <h2 class="section__title">Get In <span>Touch</span></h2>
-                <p class="section__desc">Reach out for a free quote, service inquiry, or emergency pest control.</p>
+                <span class="section__tag">Get In Touch</span>
+                <h2 class="section__title">Ready To Get Rid Of <span>Pests?</span></h2>
+                <p class="section__desc">Fill out the form below and we'll get back to you within 30 minutes.</p>
             </div>
             <div class="contact__grid">
                 <div class="contact__info">
+                    <div class="contact__card contact__card--primary">
+                        <div class="contact__card-icon">
+                            <i class="fab fa-whatsapp"></i>
+                        </div>
+                        <h4>WhatsApp</h4>
+                        <a href="https://wa.me/917709395838" target="_blank">7709395838</a>
+                        <p class="contact__card-desc">Fastest response via WhatsApp</p>
+                    </div>
                     <div class="contact__card">
-                        <div class="contact__icon"><i class="fas fa-phone"></i></div>
+                        <div class="contact__card-icon">
+                            <i class="fas fa-phone"></i>
+                        </div>
                         <h4>Call Us</h4>
                         <a href="tel:+917709395838">7709395838</a>
                         <a href="tel:+919850094761">9850094761</a>
                     </div>
                     <div class="contact__card">
-                        <div class="contact__icon"><i class="fas fa-envelope"></i></div>
-                        <h4>Email Us</h4>
+                        <div class="contact__card-icon">
+                            <i class="fas fa-envelope"></i>
+                        </div>
+                        <h4>Email</h4>
                         <a href="mailto:sanitarypc77@gmail.com">sanitarypc77@gmail.com</a>
                     </div>
                     <div class="contact__card">
-                        <div class="contact__icon"><i class="fas fa-location-dot"></i></div>
-                        <h4>Visit Us</h4>
+                        <div class="contact__card-icon">
+                            <i class="fas fa-map-marker-alt"></i>
+                        </div>
+                        <h4>Address</h4>
                         <p>Tulapur, Shivale Wasti,<br>Tal: Haveli, Dist: Pune-412216</p>
                     </div>
                     <div class="contact__card">
-                        <div class="contact__icon"><i class="fas fa-clock"></i></div>
-                        <h4>Working Hours</h4>
-                        <p>Mon - Sat: 8:00 AM – 7:00 PM<br>Sunday: On Call</p>
+                        <div class="contact__card-icon">
+                            <i class="fas fa-clock"></i>
+                        </div>
+                        <h4>Hours</h4>
+                        <p>Mon–Sat: 8 AM – 7 PM<br>Sunday: On Call</p>
+                    </div>
+                    <div class="contact__card">
+                        <div class="contact__card-icon">
+                            <i class="fas fa-map-marked-alt"></i>
+                        </div>
+                        <h4>Find Us</h4>
+                        <a href="https://maps.app.goo.gl/zM98BvmPnHK9rE7C8?g_st=ic" target="_blank">Open in Google Maps</a>
                     </div>
                 </div>
+
                 <form class="contact__form" id="contactForm">
-                    <div class="form__group">
-                        <input type="text" placeholder="Your Name" required>
+                    <h3>Send Us a Message</h3>
+                    <div class="form__row">
+                        <div class="form__group">
+                            <input type="text" placeholder="Your Name *" required>
+                        </div>
+                        <div class="form__group">
+                            <input type="tel" placeholder="Phone Number *" required>
+                        </div>
                     </div>
                     <div class="form__group">
-                        <input type="tel" placeholder="Phone Number" required>
-                    </div>
-                    <div class="form__group">
-                        <input type="email" placeholder="Email Address">
+                        <input type="email" placeholder="Email Address (optional)">
                     </div>
                     <div class="form__group">
                         <select required>
-                            <option value="">Select Service</option>
+                            <option value="">Select Service *</option>
                             <option>Cockroach Control</option>
                             <option>Rat Control</option>
                             <option>Termite Control</option>
@@ -322,59 +441,56 @@
                             <option>Snake Control</option>
                             <option>Honeybee Relocation</option>
                             <option>Fogging Service</option>
-                            <option>Other</option>
+                            <option>Other / Not Sure</option>
                         </select>
                     </div>
                     <div class="form__group">
                         <textarea rows="4" placeholder="Describe your pest problem..."></textarea>
                     </div>
                     <button type="submit" class="btn btn--primary btn--full">
-                        <i class="fas fa-paper-plane"></i> Send Message
+                        <i class="fas fa-paper-plane"></i> Send Enquiry
                     </button>
                 </form>
             </div>
         </div>
     </section>
 
-    <!-- ===================== MAP ===================== -->
-    <section class="map-section" id="location">
+    <!-- ============ MAP ============ -->
+    <section class="map-section">
         <div class="container">
-            <div class="map-link-card">
-                <div class="map-link-card__icon">
-                    <i class="fas fa-location-dot"></i>
+            <div class="map-card">
+                <div class="map-card__icon">
+                    <i class="fas fa-map-marked-alt"></i>
                 </div>
-                <h3>Find Us on Google Maps</h3>
+                <h3>Find Us On Google Maps</h3>
                 <p>Tulapur, Shivale Wasti, Tal: Haveli, Dist: Pune-412216</p>
                 <a href="https://maps.app.goo.gl/zM98BvmPnHK9rE7C8?g_st=ic" target="_blank" rel="noopener noreferrer" class="btn btn--primary">
-                    <i class="fas fa-map-marked-alt"></i> Open in Google Maps
+                    <i class="fas fa-location-arrow"></i> Open Directions
                 </a>
             </div>
         </div>
     </section>
 
-    <!-- ===================== FOOTER ===================== -->
+    <!-- ============ FOOTER ============ -->
     <footer class="footer">
         <div class="container">
             <div class="footer__grid">
                 <div class="footer__brand">
                     <div class="logo">
-                        <div class="logo__icon">
-                            <i class="fas fa-shield-halved"></i>
-                        </div>
+                        <img src="images/logo.png" alt="Sanitary Pest Control" class="logo__img">
                         <div class="logo__text">
                             <span class="logo__title">SANITARY</span>
                             <span class="logo__subtitle">PEST CONTROL</span>
                         </div>
                     </div>
-                    <p>CLEAN SPACE | SAFE PLACE — Professional pest control services in Pune since 2011. Govt. Licence No: LAID10020753</p>
+                    <p>CLEAN SPACE | SAFE PLACE — Professional pest control in Pune since 2011. Govt. Licence No: LAID10020753</p>
                     <div class="footer__social">
+                        <a href="https://wa.me/917709395838" target="_blank" aria-label="WhatsApp"><i class="fab fa-whatsapp"></i></a>
                         <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
                         <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
-                        <a href="#" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
-                        <a href="#" aria-label="WhatsApp"><i class="fab fa-whatsapp"></i></a>
                     </div>
                 </div>
-                <div class="footer__links">
+                <div class="footer__col">
                     <h4>Quick Links</h4>
                     <ul>
                         <li><a href="#home">Home</a></li>
@@ -384,8 +500,8 @@
                         <li><a href="#contact">Contact</a></li>
                     </ul>
                 </div>
-                <div class="footer__links">
-                    <h4>Our Services</h4>
+                <div class="footer__col">
+                    <h4>Services</h4>
                     <ul>
                         <li><a href="#services">Cockroach Control</a></li>
                         <li><a href="#services">Termite Control</a></li>
@@ -394,20 +510,20 @@
                         <li><a href="#services">Snake Control</a></li>
                     </ul>
                 </div>
-                <div class="footer__contact">
-                    <h4>Contact Info</h4>
+                <div class="footer__col footer__col--contact">
+                    <h4>Contact</h4>
                     <p><i class="fas fa-phone"></i> 7709395838 / 9850094761</p>
                     <p><i class="fas fa-envelope"></i> sanitarypc77@gmail.com</p>
-                    <p><i class="fas fa-location-dot"></i> Tulapur, Shivale Wasti,<br>Tal: Haveli, Dist: Pune-412216</p>
+                    <p><i class="fas fa-map-marker-alt"></i> Tulapur, Shivale Wasti, Tal: Haveli, Pune-412216</p>
                 </div>
             </div>
             <div class="footer__bottom">
-                <p>&copy; 2026 Sanitary Pest Control. All rights reserved. | Designed with <i class="fas fa-heart"></i></p>
+                <p>&copy; 2026 Sanitary Pest Control. All rights reserved. | Mahavir Shivale</p>
             </div>
         </div>
     </footer>
 
-    <!-- ===================== BACK TO TOP ===================== -->
+    <!-- ============ BACK TO TOP ============ -->
     <button class="back-to-top" id="backToTop" aria-label="Back to top">
         <i class="fas fa-chevron-up"></i>
     </button>

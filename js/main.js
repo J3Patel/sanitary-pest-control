@@ -13,7 +13,6 @@ document.addEventListener('DOMContentLoaded', () => {
         nav.classList.toggle('open');
     });
 
-    // Close nav on link click
     document.querySelectorAll('.nav__link').forEach(link => {
         link.addEventListener('click', () => {
             hamburger.classList.remove('active');
@@ -58,7 +57,7 @@ document.addEventListener('DOMContentLoaded', () => {
         window.scrollTo({ top: 0, behavior: 'smooth' });
     });
 
-    // ----- SMOOTH SCROLL FOR ANCHOR LINKS (fallback) -----
+    // ----- SMOOTH SCROLL -----
     document.querySelectorAll('a[href^="#"]').forEach(anchor => {
         anchor.addEventListener('click', function(e) {
             const target = document.querySelector(this.getAttribute('href'));
@@ -75,7 +74,6 @@ document.addEventListener('DOMContentLoaded', () => {
         form.addEventListener('submit', function(e) {
             e.preventDefault();
 
-            // Gather form data
             const data = {
                 name: form.querySelector('input[type="text"]').value.trim(),
                 phone: form.querySelector('input[type="tel"]').value.trim(),
@@ -84,7 +82,6 @@ document.addEventListener('DOMContentLoaded', () => {
                 message: form.querySelector('textarea').value.trim()
             };
 
-            // Validate required fields
             if (!data.name || !data.phone) {
                 alert('Please fill in your name and phone number.');
                 return;
@@ -94,45 +91,46 @@ document.addEventListener('DOMContentLoaded', () => {
                 return;
             }
 
-            // Build contact info
             const subject = encodeURIComponent(`Pest Control Inquiry from ${data.name}`);
             const body = encodeURIComponent(
                 `Name: ${data.name}\nPhone: ${data.phone}\nEmail: ${data.email}\nService: ${data.service}\nMessage: ${data.message}`
             );
 
-            // Show contact options
+            const whatsappMsg = encodeURIComponent(
+                `Hi Sanitary Pest Control! I need ${data.service}.\n\nName: ${data.name}\nPhone: ${data.phone}${data.email ? '\nEmail: ' + data.email : ''}${data.message ? '\n\nMessage: ' + data.message : ''}`
+            );
+
             const contactOptions = `
-                <div style="text-align:center;padding:20px;">
-                    <p style="font-size:1.1rem;font-weight:600;margin-bottom:16px;color:#0a1628;">Choose how to send your enquiry:</p>
+                <div style="text-align:center;padding:10px 0;">
+                    <h3 style="font-family:'Playfair Display',serif;font-size:1.2rem;font-weight:800;margin-bottom:16px;color:#0a1628;">How would you like to reach us?</h3>
                     <div style="display:flex;flex-direction:column;gap:12px;">
-                        <a href="https://wa.me/917709395838?text=${encodeURIComponent('Hi Sanitary Pest Control, I need ' + data.service + '. Name: ' + data.name + ', Phone: ' + data.phone + (data.message ? ', Message: ' + data.message : ''))}" target="_blank" class="btn" style="background:#25D366;color:#fff;border:none;justify-content:center;padding:14px;">
-                            <i class="fab fa-whatsapp"></i> Send via WhatsApp
+                        <a href="https://wa.me/917709395838?text=${whatsappMsg}" target="_blank" class="btn" style="background:#25D366;color:#fff;border:none;justify-content:center;padding:16px;font-size:1rem;border-radius:50px;">
+                            <i class="fab fa-whatsapp" style="font-size:1.2rem;"></i> Send via WhatsApp
                         </a>
-                        <a href="mailto:sanitarypc77@gmail.com?subject=${subject}&body=${body}" class="btn" style="background:#6b7f3e;color:#fff;border:none;justify-content:center;padding:14px;">
+                        <a href="mailto:sanitarypc77@gmail.com?subject=${subject}&body=${body}" class="btn" style="background:#6b7f3e;color:#fff;border:none;justify-content:center;padding:16px;font-size:1rem;border-radius:50px;">
                             <i class="fas fa-envelope"></i> Send via Email
                         </a>
-                        <a href="tel:+917709395838" class="btn" style="background:#0a1628;color:#fff;border:none;justify-content:center;padding:14px;">
+                        <a href="tel:+917709395838" class="btn" style="background:#0a1628;color:#fff;border:none;justify-content:center;padding:16px;font-size:1rem;border-radius:50px;">
                             <i class="fas fa-phone"></i> Call Now: 7709395838
                         </a>
+                        <p style="margin-top:10px;font-size:0.8rem;color:#888;">Or call us directly: <strong>7709395838</strong> / <strong>9850094761</strong></p>
                     </div>
                 </div>
             `;
 
-            // Replace form content with contact options
             form.innerHTML = contactOptions;
         });
     }
 
-    // ----- SCROLL REVEAL ANIMATIONS (Intersection Observer) -----
+    // ----- SCROLL REVEAL ANIMATIONS -----
     const animateElements = document.querySelectorAll(
-        '.service-card, .about__card, .why-card, .gallery__item, .contact__card'
+        '.service-card, .about__stat-card, .why-card, .gallery__item, .contact__card'
     );
 
     const observer = new IntersectionObserver((entries) => {
         entries.forEach(entry => {
             if (entry.isIntersecting) {
-                const delay = entry.target.dataset.delay || 0;
-                entry.target.style.animation = `fadeUp 0.6s ease ${delay}s forwards`;
+                entry.target.style.animation = `fadeUp 0.6s ease forwards`;
                 observer.unobserve(entry.target);
             }
         });
