@@ -94,32 +94,32 @@ document.addEventListener('DOMContentLoaded', () => {
                 return;
             }
 
-            // Show success state
-            const btn = form.querySelector('.btn');
-            const originalText = btn.innerHTML;
-            btn.innerHTML = '<i class="fas fa-spinner fa-spin"></i> Sending...';
-            btn.disabled = true;
-
-            // Simulate send via mailto fallback
+            // Build contact info
             const subject = encodeURIComponent(`Pest Control Inquiry from ${data.name}`);
             const body = encodeURIComponent(
                 `Name: ${data.name}\nPhone: ${data.phone}\nEmail: ${data.email}\nService: ${data.service}\nMessage: ${data.message}`
             );
-            window.location.href = `mailto:sanitarypc77@gmail.com?subject=${subject}&body=${body}`;
 
-            // Reset after a moment
-            setTimeout(() => {
-                btn.innerHTML = '<i class="fas fa-check"></i> Message Sent!';
-                btn.style.background = '#27ae60';
-                btn.style.borderColor = '#27ae60';
-                form.reset();
-                setTimeout(() => {
-                    btn.innerHTML = originalText;
-                    btn.style.background = '';
-                    btn.style.borderColor = '';
-                    btn.disabled = false;
-                }, 3000);
-            }, 1500);
+            // Show contact options
+            const contactOptions = `
+                <div style="text-align:center;padding:20px;">
+                    <p style="font-size:1.1rem;font-weight:600;margin-bottom:16px;color:#0a1628;">Choose how to send your enquiry:</p>
+                    <div style="display:flex;flex-direction:column;gap:12px;">
+                        <a href="https://wa.me/917709395838?text=${encodeURIComponent('Hi Sanitary Pest Control, I need ' + data.service + '. Name: ' + data.name + ', Phone: ' + data.phone + (data.message ? ', Message: ' + data.message : ''))}" target="_blank" class="btn" style="background:#25D366;color:#fff;border:none;justify-content:center;padding:14px;">
+                            <i class="fab fa-whatsapp"></i> Send via WhatsApp
+                        </a>
+                        <a href="mailto:sanitarypc77@gmail.com?subject=${subject}&body=${body}" class="btn" style="background:#6b7f3e;color:#fff;border:none;justify-content:center;padding:14px;">
+                            <i class="fas fa-envelope"></i> Send via Email
+                        </a>
+                        <a href="tel:+917709395838" class="btn" style="background:#0a1628;color:#fff;border:none;justify-content:center;padding:14px;">
+                            <i class="fas fa-phone"></i> Call Now: 7709395838
+                        </a>
+                    </div>
+                </div>
+            `;
+
+            // Replace form content with contact options
+            form.innerHTML = contactOptions;
         });
     }
 
